@@ -2,12 +2,12 @@
 -- Create Players table
 CREATE TABLE Players (
     player_id INT PRIMARY KEY,
-    player_name VARCHAR(50),
+    player_name VARCHAR(40),
     date_of_birth DATE,
-    country VARCHAR(50)
+    country VARCHAR(40)
 );
 
--- Create Games table
+-- Create game table
 CREATE TABLE Games (
     game_id INT PRIMARY KEY,
 game_name VARCHAR(100),
@@ -15,7 +15,7 @@ game_name VARCHAR(100),
     genre VARCHAR(50)
 );
 
--- Create PlayerScores table
+-- Create playerScores table
 CREATE TABLE PlayerScores (
     score_id INT PRIMARY KEY,
     player_id INT,

@@ -1,1 +1,13 @@
 
+-- Create Players table
+CREATE TABLE Players (
+    player_id INT PRIMARY KEY,
+    player_name VARCHAR(50),
+    date_of_birth DATE,
+    country VARCHAR(50)
+);
+
+-- Create Games table
+CREATE TABLE Games (
+    game_id INT PRIMARY KEY,
+ 

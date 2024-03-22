@@ -10,4 +10,18 @@ CREATE TABLE Players (
 -- Create Games table
 CREATE TABLE Games (
     game_id INT PRIMARY KEY,
- 
+game_name VARCHAR(100),
+    release_date DATE,
+    genre VARCHAR(50)
+);
+
+-- Create PlayerScores table
+CREATE TABLE PlayerScores (
+    score_id INT PRIMARY KEY,
+    player_id INT,
+    game_id INT,
+    score INT,
+    play_date DATE,
+    FOREIGN KEY (player_id) REFERENCES Players(player_id),
+    FOREIGN KEY (game_id) REFERENCES Games(game_id)
+);

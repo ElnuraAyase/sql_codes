@@ -14,3 +14,8 @@ CREATE TABLE scores (
 );
 INSERT INTO players (player_name, email) VALUES ('Player1', 'player1@example.com');
 INSERT INTO players (player_name, email) VALUES ('Player1', 'player1@example.com');
+SELECT p.player_name, s.score
+FROM players p
+INNER JOIN scores s ON p.player_id = s.player_id
+ORDER BY s.score DESC
+LIMIT 10;

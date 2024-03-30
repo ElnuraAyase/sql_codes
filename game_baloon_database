@@ -12,3 +12,5 @@ CREATE TABLE scores (
     level INT,
     FOREIGN KEY (player_id) REFERENCES players(player_id)
 );
+INSERT INTO players (player_name, email) VALUES ('Player1', 'player1@example.com');
+INSERT INTO players (player_name, email) VALUES ('Player1', 'player1@example.com');
